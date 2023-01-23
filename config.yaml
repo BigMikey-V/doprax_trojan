@@ -1,18 +1,19 @@
 log:
-  loglevel: info
+  loglevel: warning
 dns:
   servers:
-  - https+local://8.8.8.8/dns-query
+  - https+local://dns.google/dns-query
+  - 1.1.1.1
 inbounds:
 - port: 8080
   protocol: trojan
   settings:
     clients:
-    - password: "yourPassword"
+    - password: "fd53689b-c4ec-491d-9dbf-12c28a3cfadd"
   streamSettings:
     network: ws
     wsSettings:
-      path: yourwspath
+      path: /bfd53689b-c4ec-491d-9dbf-12c28a3cfadd/
   sniffing:
     enabled: true
     destOverride:
